@@ -929,7 +929,7 @@ section,
 }
 
 .hero p {
-  animation: fadeInDown 1s both 0.2s;
+  animation: fadeInDown 1s both 0.2s; text-align: center;
 }
 
 @media (min-width: 1024px) {
