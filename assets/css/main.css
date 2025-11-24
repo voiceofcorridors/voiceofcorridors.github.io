@@ -882,7 +882,7 @@ section,
 
 .hero #logo {
   width: 10%;
-  min-width: 70px;
+  min-width: 100px;
   height: auto;
   animation: fadeInDown 1s both;
   margin-bottom: 10px;
