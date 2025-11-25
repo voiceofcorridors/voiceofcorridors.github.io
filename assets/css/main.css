@@ -1236,6 +1236,23 @@ section,
   margin: 20px 0;
 }
 
+.campaign-subheading {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.campaign-subheading div {
+  padding: 5px 10px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: -5px;
+}
+
 /*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/
