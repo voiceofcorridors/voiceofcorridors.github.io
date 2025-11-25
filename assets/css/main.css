@@ -1206,10 +1206,6 @@ section,
   background-color: color-mix(in srgb, #df1529, transparent 70%) !important;
 }
 
-.m-light-background {
-  background-color: #f9fcf9 !important;
-}
-
 .services .service-item.item-indigo .icon {
   color: #6610f2;
   background: rgba(102, 16, 242, 0.1);
@@ -1226,6 +1222,10 @@ section,
 
 .m-bg-pink {
   background-color: #f3268c;
+}
+
+.m-light-background {
+  background-color: color-mix(in srgb, #f9fcf9, transparent 40%) !important;
 }
 
 .services .service-item:hover h3 a {
