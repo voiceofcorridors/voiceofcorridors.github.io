@@ -293,8 +293,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 22px;
+  vertical-align: baseline;
 }
 
 .header .logo h1 {
@@ -1243,9 +1243,10 @@ section,
   padding: 40px;
   margin: -1px;
   border-radius: 0;
+  display: inline-block;
 }
 
-.services .card span {
+.services .card .index {
   display: block;
   font-size: 24px;
   font-weight: 400;
@@ -1275,6 +1276,10 @@ section,
   position: absolute;
   top: 10px;
   left: -5px;
+}
+
+.light-bold {
+  font-weight: 500 !important;
 }
 
 /*--------------------------------------------------------------
