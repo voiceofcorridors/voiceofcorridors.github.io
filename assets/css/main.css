@@ -1185,7 +1185,7 @@ section,
 }
 
 .m-bg-orange {
-  background-color: #fd7e14;
+  background-color: color-mix(in srgb, #fd7e14, transparent 70%) !important;
 }
 
 .services .service-item.item-teal .icon {
@@ -1203,7 +1203,11 @@ section,
 }
 
 .m-bg-red {
-  background-color: #df1529;
+  background-color: color-mix(in srgb, #df1529, transparent 70%) !important;
+}
+
+.m-light-background {
+  background-color: #f9fcf9 !important;
 }
 
 .services .service-item.item-indigo .icon {
@@ -1264,7 +1268,7 @@ section,
 
 .campaign-subheading div {
   padding: 5px 10px;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 70%);
   display: inline-block;
   width: 100px;
   height: 20px;
