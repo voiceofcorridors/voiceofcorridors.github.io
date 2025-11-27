@@ -1913,3 +1913,11 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+
+video {
+  display: block;
+  height: auto;
+  width: 50%;
+  margin: auto;
+  object-fit: cover;
+}
