@@ -1032,7 +1032,7 @@ section,
 
 .agendas .carousel {
   width: 100%;
-  min-height: 70vh;
+  min-height: 400px;
   padding: 0;
   margin: 0;
   background-color: var(--background-color);
@@ -1040,34 +1040,43 @@ section,
 }
 
 .agendas img {
-  inset: 0;
   display: block;
   width: 100%;
   max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   height: auto;
-  object-fit: fill;
   z-index: 1;
 }
 
 .agendas .carousel-item {
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
+  height: auto !important;
   float: none !important;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: transform .6s ease;
 }
 
 .agendas .carousel-item:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 90%);
+  position: absolute;
   inset: 0;
   z-index: 2;
 }
 
+.agendas .carousel-inner {
+  position: relative;
+  height: auto !important;
+}
+
+.agendas .carousel-item.active {
+  position: relative;
+}
+
 .agendas .carousel-container {
+  position: absolute;
   inset: 90px 64px 64px 64px;
   display: flex;
   justify-content: center;
