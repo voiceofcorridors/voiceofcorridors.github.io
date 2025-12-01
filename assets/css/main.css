@@ -1023,6 +1023,118 @@ section,
   }
 }
 
+/*------------------------------------------------------------
+# Agenda Section
+------------------------------------------------------------*/
+.agendas {
+  padding: 0;
+}
+
+.agendas .carousel {
+  width: 100%;
+  min-height: 70vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+  position: relative;
+}
+
+.agendas img {
+  inset: 0;
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  object-fit: fill;
+  z-index: 1;
+}
+
+.agendas .carousel-item {
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  float: none !important;
+}
+
+.agendas .carousel-item:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 90%);
+  inset: 0;
+  z-index: 2;
+}
+
+.agendas .carousel-container {
+  inset: 90px 64px 64px 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.agendas .btn-get-started {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  animation: fadeInUp 1s both 0.4s;
+}
+
+.agendas .btn-get-started:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.agendas .carousel-control-prev,
+.agendas .carousel-control-next {
+  width: 10%;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.agendas .carousel-control-prev:focus,
+.agendas .carousel-control-next:focus {
+  opacity: 0.5;
+}
+
+.agendas .carousel-control-prev:hover,
+.agendas .carousel-control-next:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 1024px) {
+
+  .agendas .carousel-control-prev,
+  .agendas .carousel-control-next {
+    width: 5%;
+  }
+}
+
+.agendas .carousel-control-next-icon,
+.agendas .carousel-control-prev-icon {
+  background: none;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.agendas .carousel-indicators {
+  list-style: none;
+}
+
+.agendas .carousel-indicators li {
+  cursor: pointer;
+}
+
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
